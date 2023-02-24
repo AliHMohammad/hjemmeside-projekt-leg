@@ -45,7 +45,7 @@ p {
     padding-top: 20px;
     position: relative;
     top: 50px;
-    left: 200px;
+    left: 70px;
     display: grid;
     grid-template-areas: 
     'resultat resultat resultat resultat'
@@ -65,9 +65,12 @@ p {
     row-gap: 20px;
     column-gap: 20px;
     
-    
+}
 
-
+@media (min-width: 700px){
+    .grid-container{
+        left: 200px;
+    }
 }
 
 
