@@ -89,8 +89,6 @@ function start() {
     ligmed.addEventListener("click", beregner);
 
 
-
-
 }
 
 function inputTal(tal) {
