@@ -1,0 +1,146 @@
+body {
+    margin: 0;
+    background: rgb(192,194,105);
+    background: linear-gradient(0deg, rgba(192,194,105,1) 24%, rgba(116,237,27,1) 88%);
+    width: 100vw;
+    height: 100vh;
+
+}
+
+p {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+#resultat {
+    text-align: right;
+    padding-right: 20px;
+}
+
+.white{
+    background-color: rgba(245, 245, 245, 0.759);
+}
+
+.red {
+    background-color: rgb(207, 39, 148);
+    color: white;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+
+.lommeregner{
+    width: 400px; 
+}
+
+.border-radius{
+    border-radius: 20px;
+}
+
+.grid-container{
+    padding-left: 20px;
+    padding-top: 20px;
+    position: relative;
+    top: 50px;
+    left: 200px;
+    display: grid;
+    grid-template-areas: 
+    'resultat resultat resultat resultat'
+    'c c tilbage divider'
+    'syv otte ni gange'
+    'fire fem seks minus'
+    'et to tre plus'
+    'nul nul nul ligmed'
+    '. . . .';
+
+    background-color: rgba(128, 128, 128, 0.189);
+    
+
+    grid-template-columns: 75px 75px 75px 75px;
+    grid-template-rows: 60px; 
+
+    row-gap: 20px;
+    column-gap: 20px;
+    
+    
+
+
+}
+
+
+.grid-resultat{
+    grid-area: resultat; 
+}
+
+.grid-c{
+    grid-area: c;
+}
+
+.grid-tilbage{
+    grid-area: tilbage;
+}
+
+.grid-divider{
+    grid-area: divider;
+}
+
+.grid-7{
+    grid-area: syv;
+}
+
+.grid-8{
+    grid-area: otte;
+}
+
+.grid-9{
+    grid-area: ni;
+    
+}
+
+.grid-gange{
+    grid-area: gange;
+}
+
+.grid-4{
+    grid-area: fire;
+}
+
+.grid-5{
+    grid-area: fem;
+}
+
+.grid-6{
+    grid-area: seks;
+}
+
+.grid-minus{
+    grid-area: minus;
+}
+
+.grid-1{
+    grid-area: et;
+}
+
+.grid-2{
+    grid-area: to;
+}
+
+.grid-3{
+    grid-area: tre;
+}
+
+.grid-plus{
+    grid-area: plus;
+}
+
+.grid-0{
+    grid-area: nul;
+}
+
+.grid-ligmed{
+    grid-area: ligmed;
+}
+
