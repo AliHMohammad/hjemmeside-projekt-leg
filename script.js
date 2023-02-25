@@ -66,8 +66,8 @@ function start() {
 
 // --------------------------------------------------
 
-    c.addEventListener("click", deleteAll)
-    // tilbage.addEventListener("click", )
+    c.addEventListener("click", deleteAll);
+    tilbage.addEventListener("click", back);
 
 
     ni.addEventListener("click", () => inputTal("9"));
@@ -81,10 +81,10 @@ function start() {
     et.addEventListener("click", () => inputTal("1"));
     nul.addEventListener("click", () => inputTal("0"));
 
-    divider.addEventListener("click", () => operatorSaver("/"))
-    gange.addEventListener("click", () => operatorSaver("*"))
-    minus.addEventListener("click", () => operatorSaver("-"))
-    plus.addEventListener("click", () => operatorSaver("+"))
+    divider.addEventListener("click", () => operatorSaver("/"));
+    gange.addEventListener("click", () => operatorSaver("*"));
+    minus.addEventListener("click", () => operatorSaver("-"));
+    plus.addEventListener("click", () => operatorSaver("+"));
 
     ligmed.addEventListener("click", beregner);
 
@@ -179,6 +179,17 @@ function beregner() {
 
 }
 
+
+function back() {
+    console.log("BACK!");
+    if (!operator) {
+        sum = Math.floor(sum / 10); 
+        resultat.textContent = sum;
+    } else if (operator) {
+        sum2 = Math.floor(sum2 / 10); 
+        resultat.textContent = sum2;
+    }
+}
 
 function deleteAll() {
     resultat.textContent = "";
